@@ -16,6 +16,8 @@ class Application
       end 
       
     else 
+      resp.write "path not found"
+      resp.status = 404 
     
   end 
   
