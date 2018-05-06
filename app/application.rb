@@ -12,7 +12,8 @@ class Application
         resp.write "#{item}"
       else 
         resp.write "item not found"
-        resp.status 
+        resp.status = 400 
+        
     
   end 
   
