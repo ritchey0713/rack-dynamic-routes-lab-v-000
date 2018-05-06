@@ -8,7 +8,9 @@ class Application
       item_search = req.path.split("/items/").last
       item = @@items.find{|item| item.name == item_search}
       
-      
+      if item 
+        resp.write "#{item}"
+        
     
   end 
   
