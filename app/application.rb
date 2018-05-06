@@ -1,8 +1,8 @@
 class Application 
   
   def call(env)
-    resp = Rack::Response 
-    req = Rack::Request
+    resp = Rack::Response.new 
+    req = Rack::Request.new(env)
     
   end 
   
