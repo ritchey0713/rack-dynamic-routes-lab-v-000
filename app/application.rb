@@ -10,7 +10,9 @@ class Application
       
       if item 
         resp.write "#{item}"
-        
+      else 
+        resp.write "item not found"
+        resp.status 
     
   end 
   
