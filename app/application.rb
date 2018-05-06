@@ -6,7 +6,7 @@ class Application
     
       if req.path.match(/items/)
       item_search = req.path.split("/items/").last
-      item = @@items 
+      item = @@items.find
     
   end 
   
